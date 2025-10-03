@@ -6,6 +6,13 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		FA77C3E32E8E2074005A1FEB /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FA77C3E22E8E2074005A1FEB /* Alamofire */; };
+		FA77C3E62E8E21B6005A1FEB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FA77C3E52E8E21B6005A1FEB /* Lottie */; };
+		FA77C3E92E8E2230005A1FEB /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = FA77C3E82E8E2230005A1FEB /* KeychainAccess */; };
+		FA77C3EC2E8E22CC005A1FEB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FA77C3EB2E8E22CC005A1FEB /* Kingfisher */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		FAFBADBD2E8C85A3009F8C15 /* Weather-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA77C3EC2E8E22CC005A1FEB /* Kingfisher in Frameworks */,
+				FA77C3E32E8E2074005A1FEB /* Alamofire in Frameworks */,
+				FA77C3E62E8E21B6005A1FEB /* Lottie in Frameworks */,
+				FA77C3E92E8E2230005A1FEB /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +89,10 @@
 			);
 			name = "Weather-iOS";
 			packageProductDependencies = (
+				FA77C3E22E8E2074005A1FEB /* Alamofire */,
+				FA77C3E52E8E21B6005A1FEB /* Lottie */,
+				FA77C3E82E8E2230005A1FEB /* KeychainAccess */,
+				FA77C3EB2E8E22CC005A1FEB /* Kingfisher */,
 			);
 			productName = "Weather-iOS";
 			productReference = FAFBADBD2E8C85A3009F8C15 /* Weather-iOS.app */;
@@ -107,6 +122,12 @@
 			);
 			mainGroup = FAFBADB42E8C85A3009F8C15;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				FA77C3E12E8E2074005A1FEB /* XCRemoteSwiftPackageReference "Alamofire" */,
+				FA77C3E42E8E21B6005A1FEB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				FA77C3E72E8E2230005A1FEB /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				FA77C3EA2E8E22CC005A1FEB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = FAFBADBE2E8C85A3009F8C15 /* Products */;
 			projectDirPath = "";
@@ -345,6 +366,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA77C3E12E8E2074005A1FEB /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+		FA77C3E42E8E21B6005A1FEB /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.5.2;
+			};
+		};
+		FA77C3E72E8E2230005A1FEB /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		FA77C3EA2E8E22CC005A1FEB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA77C3E22E8E2074005A1FEB /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA77C3E12E8E2074005A1FEB /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		FA77C3E52E8E21B6005A1FEB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA77C3E42E8E21B6005A1FEB /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		FA77C3E82E8E2230005A1FEB /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA77C3E72E8E2230005A1FEB /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		FA77C3EB2E8E22CC005A1FEB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA77C3EA2E8E22CC005A1FEB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FAFBADB52E8C85A3009F8C15 /* Project object */;
 }

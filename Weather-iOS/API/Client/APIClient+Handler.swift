@@ -1,8 +1,8 @@
 //
-//  APIClient+Handler.swift
-//  ___PROJECTNAME___    
+//  APIClient.swift
+//  Weather-iOS
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
+//  Created by Azizbek Musurmonov   on 02/10/25.
 //
 
 import Foundation
