@@ -18,7 +18,7 @@ class ViewController: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .green
+        self.view.backgroundColor = .white
         if #available(iOS 13.0, *) {
             self.indicator = UIActivityIndicatorView(style: .medium)
         } else {

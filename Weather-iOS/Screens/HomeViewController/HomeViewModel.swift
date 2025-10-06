@@ -9,4 +9,11 @@ import UIKit
 
 class HomeViewModel {
     
+    private var delegate: HomeViewProtocol?
+    
+    init(_ delegate: HomeViewProtocol) {
+        self.delegate = delegate
+    }
+    
+    
 }

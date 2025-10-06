@@ -11,7 +11,7 @@ extension AppDelegate {
     
     internal func configureMainScreen() {
         
-        self.navigationController = UINavigationController(rootViewController: CountryListViewController())
+        self.navigationController = UINavigationController(rootViewController: WeatherViewController())
         
         window?.rootViewController = self.navigationController
     }
